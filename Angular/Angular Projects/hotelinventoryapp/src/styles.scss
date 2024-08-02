@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+.even {
+    background-color: lightblue;
+    color: black;
+
+}
+
+.odd {
+    background-color: aquamarine;
+    color: black;
+}
+
+tr th{
+    background-color: yellowgreen;
+}

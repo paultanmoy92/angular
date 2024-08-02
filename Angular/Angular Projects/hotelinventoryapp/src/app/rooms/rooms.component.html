@@ -1,0 +1,26 @@
+<p>Hotel Name {{hotelname}}.</p>
+<hivt-header></hivt-header>
+<div [hidden]="hideRooms">
+    <span>Number of rooms:</span>
+    <div [innerText]="numberofrooms"></div>
+</div>
+
+<div [ngStyle]="{'color' : rooms.availableRooms > 4  ? 'green' : 'red'}"
+    [innerText]="rooms.availableRooms">
+    
+</div>
+
+<button (click)="toggle()">Toggle</button>
+<div *ngIf="selectedRoom">
+ {{selectedRoom | json}}
+</div>
+
+<div>
+    <button (click)="addroom()">Add Room</button>
+</div>
+
+<div *ngIf="rooms.availableRooms > 0">
+<hivt-rooms-list [rooms]="roomList" [title]="title"
+(selectedRoom)="selectRoom($event)"></hivt-rooms-list>
+</div>
+

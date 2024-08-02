@@ -1,0 +1,28 @@
+ <!-- Angular uppercase & lowercase pipe -->
+ <h3>{{ title | uppercase}}</h3>
+ <h3>{{ title | lowercase}}</h3>
+
+ <!-- Angular number & decimal pipe -->
+ <h3>{{ count | number}}</h3>
+ <h3>{{ dcNumber | number : '1.2-2'}}</h3>
+
+ <!-- Angular currency pipe -->
+ <h3>{{ amount | currency : 'INR'}}</h3>
+
+ <!-- Angular Date pipe -->
+ <h3>{{ today | date: 'medium' }}</h3>
+
+  <!-- Angular percent pipe -->
+ <h3>{{ 0.4309 | percent: '1.2-2'}}</h3>
+
+ <!-- Angular Json pipe -->
+ <h3>{{ user | json}}</h3>
+
+ <!-- Angular slice pipe -->
+ <h3>{{ postArray | slice: 0:3}}</h3>
+
+ <!-- Angular custom pipe -->
+ <h3>{{ userDetails.city | appendCLI }}</h3>
+
+ <!-- Custom pipe with Arguments -->
+ <p>{{ dummytext | summery : 0 }}</p>

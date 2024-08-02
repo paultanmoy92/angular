@@ -1,0 +1,9 @@
+<p>class-directive works!</p>
+<h1 [class.main] = "isActive"
+    [class.text-weight] = "isActive"
+>Hello All</h1>
+
+<h1 [ngClass]= "{ 'main' : isActive, 'text-weight' : isActive}"
+>
+ngClass Directive
+</h1>

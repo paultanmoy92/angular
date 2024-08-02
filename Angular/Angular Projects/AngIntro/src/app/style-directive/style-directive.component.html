@@ -1,0 +1,13 @@
+<p>style-directive works!</p>
+
+<h1
+[style.color]="isActive ? 'red' : 'black'"
+[style.textTransform] = "isActive ? 'uppercase' : 'lowercase'"
+>Hello All, Good Morning!</h1>
+
+<h1 [style]= "{
+    color : isActive ? 'red' : 'black',
+    textTransform : isActive ? 'uppercase' : 'lowercase'
+}">
+Hello All, Good Afternoon!
+</h1>
